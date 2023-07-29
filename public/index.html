@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport"
+        content="width=device-width,
+        initial-scale=1.0" />
+        <title>Blog</title>
+        <link href="/css/style.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="/js/app.js" defer></script>
+    </head>
+    <body>
+        <nav id="navbarContainer">
+            <div id="logoContainer">Blog
+            </div>
+            <div id="middleSpaceContainer"></div>
+            <div id="linksContainer">
+                <button id="homeBtn"><a href="/homepage">Home</a></button>
+                <button id="dashboardBtn"><a href="/dashboard">Dashboard</a></button>
+                <button id="logoutBtn"><a href="/logout">Log Out</a></button>
+            </div>
+        </nav>
+
+        <div id="mainBodyContainer">
+            <!-- <h1>First!</h1>
+            <img src="/images/100-32x32.png"></img> -->
+            <div id="loginContainer">
+                <div id="loginTitle">Login</div>
+            <form action="/auth" method="post" id="loginForm">
+                <input type="text" name="loginUsername" placeholder="Username" id="loginUsername" required>
+                <input type="text" name="loginPassword" placeholder="Password" id="loginPassword" required>
+                <input type="submit" value="Login" id="loginBtn">
+            </form>
+            <button id="signUpBtn" onClick="signUpDisplay()">Sign Up</button>                            
+            </div>
+
+  <div id="signUpContainer">
+   <div id="signUpBox">
+    <div id="signUpTitle">
+     <div id="topTitle">Sign Up</div>
+    </div>
+    <form id="signUpForm" action="/signup" method="post">
+     <input type="text" name="signUpUsername" placeholder="Username" id="signUpUsername" required>
+     <input type="password" name="signUpPassword" placeholder="Password" id="signUpPassword" required>
+     <input type="email" name="signUpEmail" placeholder="email" id="signUpEmail" required>
+     <input id="submitSignUp" type="submit" value="Sign Up">
+    </form>
+   </div>
+  </div>
+
+        </div>
+
+
+    </body>
+</html>

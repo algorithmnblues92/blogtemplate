@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport"
+        content="width=device-width,
+        initial-scale=1.0" />
+        <title>Blog</title>
+        <link href="/css/style.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="/js/dashboardApp.js" defer></script>
+    </head>
+    <body>
+        <nav id="navbarContainer">
+            <div id="logoContainer">Blog
+            </div>
+            <div id="middleSpaceContainer"></div>
+            <div id="linksContainer">
+                <button id="homeBtn"><a href="/homepage">Home</a></button>
+                <button id="dashboardBtn"><a href="/dashboard">Dashboard</a></button>
+                <button id="logoutBtn"><a href="/logout">Log Out</a></button>
+            </div>
+        </nav>
+
+        <div id="mainBodyContainer">
+         <div id="dashboardBlogPostsContainer">dashboardBlogPostContainer
+
+          <div id="dashboardNewPostContainer"> New Blog Post
+           <form action="/addblogpost" method="post" id="newBlogPostForm">
+           <input type="text" name="newTitle" id="newTitle" placeholder="Title" required>
+           <textarea type="text" name="newContent" id="newContent" placeholder="New Content" required></textarea>
+           <input type="submit" value="Submit" id="newPostSubmit">
+           </form>
+         </div>
+
+         <button id="newPostBtn" onClick="newPostDisplay()">New Post</button>
+
+         </div>
+
+
+            </div>                  
+            <!-- </div>
+        </div> -->
+
+
+    </body>
+</html>
+
